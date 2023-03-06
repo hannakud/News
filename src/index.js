@@ -16,8 +16,8 @@ const createListItem = item =>
   `<li class="list__item">
   <img class="list__pic" src="${item.urlToImage}" alt="${item.description}">
   <h2 class="list__title">${item.title}</h2>
-  <p class="list__description">${item.description}"</p>
-  <p class="list__author">${item.author}"</p>
+  <p class="list__description">${item.description ? item.description : ''}</p>
+  <p class="list__author">${item.author ? item.author : ''}</p>
   <a class="list__link" href="${item.url}" target="_blank">Read more</a>
   </li>`;
 
